@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html" />
+<meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0">
+<title>Yuking Mizuking Official Website</title>
+<meta name="Description" content="hi,evaryone.We are Yuking and Mizuking.We wanna be youtuber.We introduce ourselves and how to be a youtuber.If you like us,Please cheer up and resigter our channel.">
+<meta name="Keywords" content="youtuber,youtube,yukingmizuking,ユーチューバー,ユーチューブ">
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+<script type="text/javascript" src="js/jquery.inview.min.js" ></script>
+<script type="text/javascript" src="js/ityped.js"></script>
+<script>
+	$(function() {
+  $('.box1').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('zoomIn');
+    } else {
+      $(this).removeClass('zoomIn');
+      $(this).css('opacity',0);
+    }
+  });
+
+  $('.box2').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('jello');
+    } else {
+      $(this).removeClass('jello');
+    }
+  });
+  
+  $('.box3').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('rubberBand');
+    } else {
+      $(this).removeClass('rubberBand');
+    }
+  });  
+});
+</script>
+
+
+</head>
+
+<body>
+<header>
+  <h1 class="imglogotop"><img src="img/img_logo.png" width="1280" height="800" alt="we are YUKING MIZUKING from Japan" /></h1>
+</header>
+<div class="container">
+  <div class="subtitle"><span>Road to Youtuber</span></div>
+  <div class="detail"><a href="#"><span id="ityped" class="ityped">＞＞＞see detail ...</span></a></div>
+  <div class="img1top"><a href="#"><img src="img/img_yumizuking1.png" width="1280" height="720" alt="" /></a></div>
+  <div class="img2top"><a href="#"><img src="img/img_yumizuking2.png" width="1280" height="720" alt="" /></a></div>
+  <div class="img3top box2 animated infinite jello"><a href="#"><img src="img/img_yumizuking3.png" width="1280" height="720" alt="" /></a></div>
+  <div class="img4top box3 animated infinite rubberBand"><a href="#"><img src="img/img_yumizuking4.png" width="1280" height="720" alt="" /></a></div>
+</div>
+<script>
+ityped.init('#ityped', {
+  // required - for now, only accepting texts
+    strings: ['>>> See detail...'],
+    //optional
+    typeSpeed: 55, //default
+    //optional
+    backSpeed: 30, //default
+    //optional
+    startDelay: 500, //default
+    //optional
+    backDelay: 500, //default
+    //optional
+    loop: false, //default
+    //optional    
+    showCursor: true, //default
+    //optional    
+    cursorChar: "|", //default
+    // optional callback called once the last string has been typed
+    onFinished: function(){}
+});
+	</script>
+</body>
+</html>
