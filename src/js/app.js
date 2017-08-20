@@ -3,7 +3,7 @@ import {init} from 'ityped';
 
 $(function() {
 	$('.box2').hover(function() {
-		$(this).addClass('jello');
+	$(this).addClass('jello');
 	}, function() {
 		$(this).removeClass('jello');
 
